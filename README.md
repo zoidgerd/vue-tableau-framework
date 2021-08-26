@@ -8,7 +8,7 @@
 - Vue3 API: https://v3.vuejs.org/api/
 
 ## Requirements:
-
+  tbd
 ## Setup Tableau Server:
-
+  tbd
 
