@@ -1,17 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <component :is="activeComponent"></component>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TableauUserAuthentication from "./components/TableauUserAuthentication.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    TableauUserAuthentication,
+  },
+
+  data() {
+    return {
+      uid: String,
+      activeComponent: "TableauUserAuthentication",
+    };
+  },
+};
 </script>
 
 <style>
